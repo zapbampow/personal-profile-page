@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Raleway:600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Your Name Here</title>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <!--  -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img id="navbar-logo" src="logo.png" alt="logo">Your Name  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Splash Page -->
+  <div class="container-fluid">
+    <div class="row splash justify-content-center" id="home">
+      <div class="col-12 text-center" id="title">
+        <h1>Your Name Here</h1>
+        <h4>A subheading about you.</h4>
+        <hr>
+      </div>
+      <div class="vertical-line text-center">
+      </div>
+    </div>
+
+    <!-- About -->
+    <a name="about"></a>
+    <div class="row content-section">
+      <div class='container'>
+        <div class="col-12 text-center section-title">
+          <h1>About</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img src="profile-picture.jpg" alt="profile-picture" class="img-fluid">
+          </div>
+
+          <div class="col-md-8 col-sm-12">
+            <p>This is a paragraph about me. I live in a city in a state in a country and I have family and friends.</p>
+
+            <p>I also do really great things at work. I work hard and people generally like me. I taught myself or have a degree from this great school that you of course respect.</p>
+
+            <p>Here is some more information about me. I'm especially good that his area of my work. That's really why you should call my name when we play Red Rover.</p>
+
+            <p>If the above wasn't enough to make you love me I can also say a bunch of insider lingo about about our common industry like agile, ajax, react, angular, ai, data mining, frontend, backend, the end.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <a name="skills"></a>
+    <div class="row content-section" id="skills">
+      <div class="container">
+        <div class="col-12 text-center section-title">
+          <h1>Skills</h1>
+        </div>
+        <div class="col-12 text-center">
+          <!-- These icons come from devicon, but you can find yours wherever you want to find them. -->
+          <i class="devicon-html5-plain devi-size"></i>
+          <i class="devicon-css3-plain devi-size"></i>
+          <i class="devicon-javascript-plain devi-size"></i>
+          <i class="devicon-jquery-plain devi-size"></i>
+          <i class="devicon-bootstrap-plain devi-size"></i>
+          <i class="devicon-github-plain devi-size"></i>
+          <i class="devicon-gimp-plain devi-size"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work -->
+    <!-- I'm a Front End Developer. So these projects are all things that I did. You'll want to turn them into things that you did and make the links into things that are actually there. -->
+    <a name="work"></a>
+    <div class="row content-section" id="work">
+      <div class="container">
+        <div class="col-12 text-center section-title">
+          <h1>Work</h1>
+        </div>
+
+        <!-- Simon Game -->
+        <div class="row project">
+          <div class="col-12 project-title">
+            <a href="work/simon/simon.html">Simon Game</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="work/simon/simon.html"><img src="work/simon/simon.gif" alt="simon.gif" class="img-fluid"></a>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <p><strong>The Project: </strong>Create a clone of the 80's game, Simon</p>
+            <p><strong>Challenges: </strong> The main challenges I ran into with Simon were related to concurrency - when the computer ran through the sequence it turned on all the lights and sounds at once, instead of in order. I solved the timing issues with setTimout.</p>
+            <p><strong>Possible Improvements: </strong>The timing issues could be refactored using better patterns. Additionally, the visuals can be polished a bit. The game could also be improved by adding code to speed up the computer's running of the sequence as it gets longer.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Tic Tac Toe -->
+        <div class="row project">
+          <div class="col-12 project-title">
+            <a href="work/tictactoe/tictactoe.html">Tic Tac Toe</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="work/tictactoe/tictactoe.html"><img src="work/tictactoe/tictactoe.gif" alt="tictactoe.gif" class="img-fluid"></a>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <p><strong>The Project: </strong>Create a tic tac toe game that can be played against the computer or against another player</p>
+            <p><strong>Tools used: </strong> HTML, CSS, Bootstrap, Javascript, jQuery</p>
+            <p><strong>Challenges: </strong> </p>
+            <p><strong>Possible Improvements: </strong>First, while the AI is unbeatable, currently it doesn't always win when it has the opportunity. I need to improve the AI to make sure that it always wins if possible.</p>
+            <p>Second, although it is probably overkill for tic tac toe, the game would be improved and the AI would play a more varied style if I implemented the Minimax algorithm instead of my homegrown logic, which hard codes certain moves in certain situations. Minimax would make it a more "flexible" game.</p>
+            <p>Finally, the visual design isn't going to win any awards and would be improved with some work on polishing it up.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Pomodoro Clock -->
+        <div class="row project">
+          <div class="col-12 project-title">
+            <a href="work/pomodoro-timer/pomodoro.html">Eclipse Pomodoro Timer</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="work/pomodoro-timer/pomodoro.html"><img src="work/pomodoro-timer/eclipse.gif" alt="eclipse.gif" class="img-fluid"></a>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <p><strong>The Project: </strong>Create a pomodoro clock, which goes through two seperate countdown cycles before restarting.</p>
+            <p><strong>Tools used: </strong> HTML, CSS, Bootstrap, Javascript, jQuery</p>
+            <p><strong>Challenges: </strong> I created this as part of freeCodeCamp, so there are plenty of these tools out there. However, as I looked for an eclipse animation to work off of, I couldn't find any that I liked. I used this as an opportunity to dive
+              into CSS animation and create something that I haven't seen anywhere else.</p>
+            <p><strong>Possible Improvements: </strong>There are a few of usability issues to change. First, it would save if the user could simply type in the amounts for the 2 countdown clocks. Additionally, being able to click "Enter" or the spacebar
+              to start and stop the clock would add a little usability. Finally, I also want to continue improving the animation and graphic design of this tool. On screens smaller than 520px wide the elements for the CSS animation don't line up correctly.
+              This needs to be fixed.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Calculator -->
+        <div class="row project">
+
+          <div class="col-12 project-title">
+            <a href="work/calculator/calculator.html">A Javascript Calculator</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <a href="work/calculator/calculator.html"><img src="work/calculator/calculator.gif" alt="calculator.gif" class="img-fluid"></a>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <p><strong>The Project: </strong>Create calculator for basic math using Javascript.</p>
+            <p><strong>Tools used: </strong> HTML, CSS, Bootstrap, Javascript, jQuery</p>
+            <p><strong>Challenges: </strong> the biggest challenge was figuring out the logic to make all the functionality work - how to store and clear all the variables, how to make all the button clicks do what is needed.</p>
+            <p><strong>Possible Improvements: </strong>There are some usability issues that I'd like to address. First, it could use 2 clearing buttons, C and AC. The current Clear button acts as the AC button. It clears everything. To be more like a standard calculator it could use a C button to clear the last input.</p>
+            <p>Second, when a user enters "1+1+1+1," it gives the correct answer. But it doesn't show an updated tally as they go through. I would like to add that functionality.</p>
+            <p>Finally, it would be nice if you could see the full string of inputs from a multistep problem. So that would mainly include updating the UI.</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Other Projects -->
+        <div class="row project">
+
+          <div class="col-12 project-title">
+            Other Projects
+          </div>
+
+          <!-- Simpsons Quotes -->
+          <div class="col-md-3 col-sm-12 text-center other-project-title">
+            <a href="work/otherwork/simpsons-random-quote-generator">
+              <img class="img-fluid" src="work/otherwork/simpsons-screenshot.png" alt="simpsons screenshot">
+              <h4>Simpsons Quote Generator</h4>
+            </a>
+          </div>
+
+          <!-- Local Weather App -->
+          <div class="col-md-3 col-sm-12 text-center other-project-title">
+            <a href="work/otherwork/localweather">
+            <img class="img-fluid" src="work/otherwork/weather-screenshot.png" alt="weather screenshot">
+            <h4>Local Weather App</h4>
+            </a>
+          </div>
+
+          <!-- Wikipedia Viewer -->
+          <div class="col-md-3 col-sm-12 text-center other-project-title">
+            <a href="work/otherwork/wikipedia-viewer">
+              <img class="img-fluid" src="work/otherwork/wikipedia-screenshot.png" alt="">
+              <h4>Wikipedia Viewer</h4>
+            </a>
+          </div>
+
+          <!-- Twitch API Project -->
+          <div class="col-md-3 col-sm-12 text-center other-project-title">
+            <a href="work/otherwork/twitch">
+              <img class="img-fluid" src="work/otherwork/twitch-screenshot.png" alt="">
+              <h4>Twitch API Project</h4>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <!-- The email contact part of this is from http://joemaller.com/js-mailer.shtml. You can just update this with your info. -->
+    <a name="contact"></a>
+    <div class="row content-section justify-content-center" id="contact">
+        <div class="col-12 text-center section-title">
+          <h1>Contact</h1>
+        </div>
+        <div class="col-md-2 col-xs-6 text-center contact-method">
+            <SCRIPT TYPE="text/javascript">
+          <!--
+          // protected email script by Joe Maller
+          // JavaScripts available at http://www.joemaller.com
+          // this script is free to use and distribute
+          // but please credit me and/or link to my site
+
+          emailE='emaildomain.com'
+          emailE=('yourname' + '@' + emailE)
+          document.write('<A href="mailto:' + emailE + '"><i class="fa fa-envelope fa-2x"></i>' + emailE + '</a>')
+
+           //-->
+          </script>
+
+          <NOSCRIPT>
+              <em>Email address protected by JavaScript.<BR>
+              Please enable JavaScript to contact me by email.</em>
+          </NOSCRIPT>
+        </div>
+        <div class="col-md-2 col-xs-6 text-center contact-method">
+          <a href="https://www.twitter.com/"><i class="fa fa-twitter fa-2x"></i><p>Twitter</p></a>
+        </div>
+        <div class="col-md-2 col-xs-6 text-center contact-method">
+          <a href=""><i class="fa fa-linkedin fa-2x"></i><p>LinkedIn</p></a>
+        </div>
+        <div class="col-md-2 col-xs-6 text-center contact-method">
+          <a href="https://www.github.com/"><i class="fa fa-github fa-2x"></i><p>Github</p></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="footer col-12 bg-dark text-center">
+        <p>This site was created by me. <i class="fa fa-copyright"></i> 2017</p>
+      </div>
+    </div>
+
+
+    <!-- End Container -->
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/c0dd3b1dfe.js"></script>
+
+</body>
+
+</html>
