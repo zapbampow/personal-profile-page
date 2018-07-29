@@ -106,7 +106,7 @@ body {
   color:#212529;
 }
 
-.project-title a, .other-project-title a, .contact-method a {
+.project-title a, .other-project-title a, .contact-method a, .footer a {
   color: #212529;
 }
 
@@ -122,3 +122,11 @@ hr {
   font-size: .75em;
   color: rgba(255,255,255,.5);
 }
+
+.other-project-title {
+  margin: 0 0 1em 0;
+}
+
+/* .church-designs {
+  list-style: none;
+} */

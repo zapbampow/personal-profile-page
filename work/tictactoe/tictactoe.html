@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="tictactoe.css">
+  <title>Tic Tac Toe: The Best Game in the World!!!! Wait, wait, wait. Just kidding.</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+
+
+    <!-- The table and board -->
+    <div class="row main justify-content-center">
+      <!-- Player Turn Order  -->
+      <div class="headers justify-content-center hidden">
+        <!-- Headers for direction on whose turn it is  -->
+        <div class="two-player-turn-header">
+          <div class="player-turn player-header text-center">
+          </div>
+          <div class="player-turn player-1-header text-center hidden">
+          </div>
+          <div class="player-turn player-2-header text-center hidden">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="table">
+
+        <!-- Player Number screen -->
+        <div class="inside-board" id='number'>
+          <div class="player-number justify-content-center">
+            <div class="player one-player text-center">
+              <h3>One player <i class="fa fa-user"></i></h3></div>
+            <div class='player two-players text-center'>
+              <h3>Two Players <i class="fa fa-user"></i><i class="fa fa-user"></i></h3></div>
+          </div>
+        </div>
+
+        <!-- First or second player?  -->
+        <div class="inside-board hidden" id='order'>
+          <div class="player-order justify-content-center text-center">
+            <div class=text-center>
+              <h3 class="order-question">Which player do you want to be?</h3></div>
+            <div class="order player first-player text-center">
+              <h3>First player</h3></div>
+            <div class='order player second-player text-center'>
+              <h3>Second Player</h3></div>
+          </div>
+        </div>
+
+        <!-- Difficulty Level  -->
+        <div class="inside-board hidden" id='difficulty-div'>
+          <div class="player-order justify-content-center text-center">
+            <div class=text-center>
+              <h3 class="difficulty">Difficulty?</h3></div>
+              <div class="level easy text-center">
+                <h3>Easy</h3></div>
+                <div class='level impossible text-center'>
+                  <h3>Difficult</h3></div>
+          </div>
+        </div>
+
+        <!-- The Gameboard -->
+        <div class="inside-board gameboard hidden">
+
+          <div class="container-fluid">
+            <div class="row row-1 text-center">
+              <div class="col-4 box" id="box0"></div>
+              <div class="col-4 box vert-lines" id="box1"></div>
+              <div class="col-4 box" id="box2"></div>
+            </div>
+
+            <div class="row row-2 text-center horiz-lines">
+              <div class="col-4 box" id="box3"></div>
+              <div class="col-4 box vert-lines" id="box4"></div>
+              <div class="col-4 box" id='box5'></div>
+            </div>
+
+            <div class="row row-3 text-center">
+              <div class="col-4 box" id="box6"></div>
+              <div class="col-4 box vert-lines" id="box7"></div>
+              <div class="col-4 box" id="box8"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Game End  -->
+        <div class="inside-board game-end hidden">
+          <div class="player-order justify-content-center text-center">
+            <div class=" win-draw-div text-center"></div>
+            <div class="text-center">
+              <h3>Play again?</h3></div>
+            <div class="row justify-content-center">
+              <div class='col-5 player yes text-center'>
+                <h3>Yes</h3></div>
+              <div class='col-5 player no text-center'>
+                <h3>No</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="tictactoe.js"></script>
+</body>
+
+</html>

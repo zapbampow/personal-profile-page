@@ -1,0 +1,167 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: black;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #dcdcd7;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: 700;
+  /*text-shadow:
+  0 0 1px #000000,
+  0 0 2px #d5c18d,
+  0 0 3px #bdab7d,
+  0 0 4px #a3946c,
+  0 0 5px #8a7d5b,
+  0 0 6px #6e6349,
+  0 0 7px #6e6349,
+  0 0 8px #3b3527,
+  0 0 9px #211e16,
+  0 0 10px #080705;*/
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: .3em;
+  font-weight: 700;
+}
+
+
+#title-row {
+  margin-top: 2%;
+}
+
+.variables-col {
+  padding: .5em 0 0 0;
+  min-width: 150px;
+}
+
+#the-clock {
+  margin-bottom: 1em;
+}
+
+/* Width of number space between + and - */
+#session-length, #break-length {
+  display: inline-block;
+  min-width: 50px;
+}
+
+/* Hover Cursor*/
+#session-minus:hover, #session-plus:hover, #break-minus:hover, #break-plus:hover, #the-clock:hover {
+  cursor: pointer;
+}
+
+
+/* The Eclipse Animation */
+#the-eclipse {
+  width: 500px;
+  margin: 0 auto;
+}
+/* Outer cirle animation */
+.outer-circle {
+	height: 320px;
+	width: 320px;
+	border-radius: 50%;
+	border: 1px whitesmoke solid;
+	background-color: whitesmoke;
+  margin: 0 auto;
+}
+
+/* Inner Cirle Animation: Slidein and slide out */
+/* The outer circle animation happens in between */
+.inner-circle {
+	animation-duration: 1800s;
+	/*animation-name: slidein;*/
+  animation-name: eclipse-session;
+	animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+}
+
+.inner-circle-play {
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+}
+
+@keyframes eclipse-session {
+	0% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin:-100% 0 0 71%;
+    box-shadow: 0 0 0px black;
+	}
+
+  100% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin:-64% 0 0 18%;
+    box-shadow: 0 0 0px black;
+	}
+}
+
+@keyframes eclipse-break {
+  0% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin:-64% 0 0 18%;
+    box-shadow: 0 0 0px black;
+	}
+
+  2% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin: -64% 0 0 18%;
+		box-shadow: 0 0 1px #b09ccb,
+							 0 0 5px #9b89b3,
+							 0 0 12px #857699,
+							 0 0 17px #6e6280,
+							 0 0 22px white,
+							 0 0 27px #423b4d,
+							 0 0 32px #2c2733,
+							 0 0 37px #16141a;
+	}
+
+  50% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin: -64% 0 0 18%;
+		box-shadow: 0 0 1px #b09ccb,
+							 0 0 5px #9b89b3,
+							 0 0 12px #857699,
+							 0 0 17px #6e6280,
+							 0 0 22px white,
+							 0 0 27px #423b4d,
+							 0 0 32px #2c2733,
+							 0 0 37px #16141a;
+	}
+
+  52% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin:-64% 0 0 18%;
+    box-shadow: 0 0 0px black;
+	}
+
+  100% {
+		height: 320px;
+		width: 320px;
+		background-color: black;
+		border-radius: 50%;
+		margin:-28% 0 0 -35%;
+	}
+}

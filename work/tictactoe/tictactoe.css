@@ -1,0 +1,105 @@
+body {
+  color: white;
+}
+
+/* Player turn header styling */
+
+.headers {
+  color: black;
+  width: 360px;
+  margin: -4em -360px 0 0;
+}
+
+/*The Board Setup Styling*/
+
+.main {
+  margin-top: 10%;
+}
+
+.table {
+  width: 360px;
+  height: 360px;
+  background-color: #b69b4c;
+  padding: 20px 20px;
+  box-shadow: 2px 2px 1px #212121, 2px 2px 5px #464646, 2px 2px 10px #6e6e6e, 2px 2px 15px #8f8f8f;
+}
+
+.inside-board {
+  height: 320px;
+  width: 320px;
+  padding: 10px 10px;
+  background-color: #b69b4c;
+  box-shadow: 0 0 25px #393939 inset, 0 0 50px #393939 inset, 0 0 100px #393939 inset, 0 0 150px #393939 inset, 0 0 200px #393939 inset, 0 0 250px #393939 inset, 0 0 300px #393939 inset, 0 0 350px #393939 inset, 0 0 360px #393939 inset;
+}
+
+/* Choose player number div*/
+
+.player-number, .player-order {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.player {
+  color: #d5d5d5;
+  margin: 0 0 2em 0;
+  border: 2px transparent dotted;
+}
+
+.player:hover, .level:hover {
+  cursor: pointer;
+  color: white;
+  border: 2px white dotted;
+}
+
+/* Choice for first or second player DIV */
+
+.order-question .winner-or-draw .difficulty{
+  margin-bottom: 1em;
+}
+
+/* Difficulty Level Div*/
+.level {
+  color: #d5d5d5;
+  margin: 0 0 1em 0;
+  border: 2px transparent dotted;
+}
+
+/* The Gameboard DIV*/
+
+.gameboard {}
+
+.row-1, .row-2, .row-3 {
+  height: 100px;
+}
+
+.horiz-lines {
+  border-top: 3px white solid;
+  border-bottom: 3px white solid;
+}
+
+.vert-lines {
+  border-right: 3px white solid;
+  border-left: 3px white solid;
+}
+
+.box {
+  font-size: 3.6em;
+  /*padding: 20px;*/
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+/* Class for hiding divs. Will toggle with jQuery as user progresses through decision tree */
+
+.hidden {
+  display: none;
+}
+
+/* Game End */
+
+.win-draw-div {
+  margin-bottom: 1em;
+}

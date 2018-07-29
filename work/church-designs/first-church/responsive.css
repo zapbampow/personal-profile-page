@@ -1,0 +1,121 @@
+@media screen and (max-width:830px){
+    /* Responsive Menu Button and hidding NavBar */
+    #resp-menu-btn {
+        visibility: visible;
+        display:inline-block;
+        vertical-align: middle;
+        margin:0 1em 0 0;
+    }
+
+    #resp-menu-btn a {
+        border:2px #ffffff solid;
+        padding:.5em 1em;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    #resp-menu-btn a:hover {
+        cursor: pointer;
+        color:#000;
+        border-color:#dddddd;
+        background-color: #dddddd;
+    }
+
+    #nav-links ul {
+        display: none;
+    }
+
+    /* HEADER */
+    .main-title {
+        margin: 2em 1em;
+    }
+    
+    .main-title h1 {
+        font-size: 3em;
+    }
+    
+    .header-buttons {
+        margin: 0 0 3em 0;
+        width: 75%;
+    }
+    
+    .header-buttons button {
+        margin: 0;
+    }
+
+    /* Features */
+
+    .single-feature {
+        width:100%;
+        margin-right:2em;
+    }
+
+    .image-container {
+        width:20%;
+    }
+
+    .feature-info {
+        width:75%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    /* HEADER */
+    header {
+        background-image: 
+        linear-gradient(#000000aa, #000000aa),
+        url(header-background-3-small.jpg) ;
+    }
+
+    .main-title h1 {
+        font-size: 2.5em;
+    }
+
+    .header-buttons {
+        width: 65%;
+        flex-direction: column;
+    }
+    
+    .header-buttons button {
+        margin:.5em 0;
+    }
+
+    /* SERVICE TIMES */
+    #service-times {
+        padding: 2em 0 0 0;
+    }   
+    
+    #service-times h3 {
+        font-size: 1.75em;
+        margin: .3em;
+    }
+    
+    .values {
+        margin:1em 0;
+        font-size:1.75em;
+    }
+
+    /* Features */
+    .single-feature {
+        width:100%;
+        padding:1em 0;
+    }
+
+    .image-container {
+        display:none;
+    }
+
+    /* Footer */
+    .footer-bar {  
+        padding:2em 0;
+    }
+    
+    .footer-bar p {
+        text-align: center;
+    }
+}
+
+
